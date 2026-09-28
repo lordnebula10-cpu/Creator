@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Messaging App</title>
+    <style>
+      * { box-sizing: border-box; }
+      html, body, #root { margin: 0; padding: 0; height: 100%; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      #root {
+        display: flex;
+        justify-content: center;
+      }
+      /* App-like frame on desktop */
+      .app-frame {
+        width: 100%;
+        max-width: 420px;
+        min-height: 100vh;
+        background: #fff;
+        border-left: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="app-frame" id="app-root"></div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
